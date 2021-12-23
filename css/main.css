@@ -87,6 +87,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.content-wrapper {
+  width: 89%;
+  margin: 0;
+}
+
 /* -------------------- Base Header - Footer Styles -------------------- */
 
 header,
@@ -97,6 +102,10 @@ footer {
   flex-flow: row wrap;
 }
 
+header {
+  padding: 15px 0;
+}
+
 header .content-wrapper {
   display: flex;
   justify-content: center;
@@ -104,16 +113,61 @@ header .content-wrapper {
   flex-flow: row wrap;
 }
 
+header a {
+  width: 60%;
+}
+
+header img {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.header-divider {
+  width: 100%;
+  height: 1px;
+}
+
 header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 100%;
+  list-style: none;
+  padding: 20px 0;
+  margin: 0;
+}
+
+footer {
+  flex-direction: column;
+}
+
+footer .content-wrapper {
+  width: 56%;
+}
+
+footer h4 {
+  margin: 0;
+  text-align: center;
+}
+
+footer .contact h4 {
+  padding: 52px 0 22px 0;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+}
+
+footer .social h4 {
+  padding: 48px 0 20px 0;
 }
 
 footer .social-icons {
@@ -128,6 +182,10 @@ footer .social-icons p {
   align-items: center;
 }
 
+footer .copyright p {
+  padding: 52px 0 20px 0;
+}
+
 /* -------------------- Mobile Styles - Homepage -------------------- */
 
 /* Hero Area */
@@ -138,6 +196,11 @@ footer .social-icons p {
   flex-flow: row wrap;
 }
 
+.hero-area h1 {
+  padding: 55px 0 330px 0;
+  margin: 0;
+}
+
 /* Aside */
 
 aside {
@@ -145,6 +208,30 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 0;
+}
+
+.form-description h3 {
+  padding-top: 30px;
+  margin: 0;
+}
+
+.form-description p {
+  padding: 14px 0 40px 0;
+  margin: 0;
+}
+
+.form {
+  margin: 0 0 36px 0;
+}
+
+.form h3 {
+  padding-bottom: 18px;
+  margin: 0;
+}
+
+.form input {
+  margin-bottom: 18px;
 }
 
 /* Features */
@@ -155,11 +242,26 @@ aside {
   flex-flow: row wrap;
 }
 
-.features-items {
+.features h2 {
+  padding: 51px 0 94px 0;
+  margin: 0;
+}
+
+.features .features-items {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.features article {
+  width: 56%;
+}
+
+.features article p {
+  padding: 76px 0;
+  margin: 0;
+  text-align: center;
 }
 
 /* Reviews */
@@ -168,6 +270,21 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+.reviews h2 {
+  padding: 55px 0 32px 0;
+  margin: 0;
+}
+
+.reviews h3 {
+  padding: 22px 0 25px 0;
+  margin: 0;
+}
+
+.reviews p {
+  padding-bottom: 45px;
+  margin: 0;
 }
 
 /* ==========================================================================
@@ -179,6 +296,16 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 54px 0 50px 0;
+}
+
+.mission h2 {
+  padding: 0 0 18px 0;
+  margin: 0;
+}
+
+.mission-content p {
+  margin: 0;
 }
   
 .contact-section {
@@ -186,6 +313,20 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 54px 0 50px 0;
+}
+
+.contact-section h2 {
+  margin: 0;
+}
+
+.contact-section h4 {
+  padding: 20px 0;
+  margin: 0;
+}
+
+.contact-section p {
+  margin: 0;
 }
 
 /* ==========================================================================
@@ -197,13 +338,31 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 52px 0 45px 0;
 }
-  
+
 .faq .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.faq h2 {
+  margin: 0;
+}
+
+.faq-content {
+  margin: 0;
+}
+
+.faq-content h4 {
+  padding: 50px 0 15px 0;
+  margin: 0;
+}
+
+.faq-content p {
+  margin: 0;
 }
 
 /* ==========================================================================
