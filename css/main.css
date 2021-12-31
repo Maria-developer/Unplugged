@@ -691,6 +691,8 @@ footer .copyright p {
    FAQ Page
    ========================================================================== */
 
+/* -------------------- FAQ Section -------------------- */
+
 .faq {
   margin: 100px 0;
 }
@@ -718,7 +720,144 @@ footer .copyright p {
    ========================================================================== */
 
 @media only screen and (min-width: 1200px) {
-  /* Desktop styles here */
+
+/* 
+   Homepage
+   ========================================================================== */
+
+.content-wrapper {
+  width: 80%;
+}
+
+/* -------------------- Header -------------------- */
+
+header {
+  padding: 24px 0 22px 0;
+}
+
+header a {
+  width: 29%;
+}
+
+header nav {
+  width: 71%;
+}
+
+header nav ul {
+  width: 14%;
+}
+
+/* -------------------- Hero Area -------------------- */
+
+.hero-area h1 {
+  padding: 49px 294px 439px 0;
+}
+
+/* -------------------- Aside -------------------- */
+
+aside .content-wrapper {
+  margin-bottom: 34px;
+}
+
+.form-description h3 {
+  padding-bottom: 18px;
+}
+
+.form {
+  width: 40%;
+}
+
+.form h3 {
+  padding-bottom: 18px;
+}
+
+.form input {
+  margin-bottom: 16px;
+}
+
+/* -------------------- Features -------------------- */
+
+.features .content-wrapper {
+  margin: 105px 0 27px 0;
+}
+
+.features h2 {
+  padding-bottom: 100px;
+}
+
+.features .features-items {
+  justify-content: space-around;
+}
+
+.features article {
+  flex-basis: 33%;
+  padding: 0;
+}
+
+.features article p {
+  padding: 25px 65px 63px 65px;
+}
+
+/* -------------------- Reviews -------------------- */
+
+.reviews .content-wrapper {
+  margin: 102px 0 97px 0;
+}
+
+.reviews h2 {
+  padding-bottom: 98px;
+}
+
+.reviews article a {
+  width: 48%;
+}
+
+.reviews .reviews-text {
+  width: 48%;
+}
+
+/* -------------------- Footer -------------------- */
+
+footer .content-wrapper {
+  width: 80%;
+}
+
+footer .contact, 
+footer .social {
+  width: 33%;
+}
+
+footer .contact h4, 
+footer .social h4 {
+  padding-bottom: 40px;
+}
+
+/* 
+   About Page
+   ========================================================================== */
+
+/* -------------------- Contact Section -------------------- */
+
+.contact-section {
+  margin-top: 104px 0 100px 0;
+}
+
+.contact-section h2 {
+  width: 97%;
+}
+
+.general-information {
+  width: 32%;
+}
+
+.contact-section h4 {
+  padding: 40px 0 42px 0;
+}
+
+.chat-with-us {
+  width: 47%;
+}
+
 }
 
 /* ==========================================================================
