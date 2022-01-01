@@ -123,12 +123,12 @@ p {
 	font-size: 0.875em;
 }
  
-img {
- 
+img { 
+	width: 100%;
 }
  
 figure {
- 
+  margin: 0;
 }
  
 address {
@@ -158,12 +158,8 @@ header .content-wrapper {
   width: 100%;
 }
 
-header a {
+header figure {
   width: 55%;
-}
-
-header img {
-  width: 100%;
   padding: 15px 0 10px 0;
 }
 
@@ -193,7 +189,8 @@ header nav ul {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: #333;
+  background: url('../img/hero-image.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 .hero-area h1 {
@@ -273,7 +270,8 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: #333;
+  background: url('../img/features-background.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 .features h2 {
@@ -317,6 +315,10 @@ input[type=button] {
   color: #e2e3ed;
   font-weight: 500;
   width: 98%;
+}
+
+.reviews figure {
+  width: 100%;
 }
 
 .reviews h3 {
@@ -591,11 +593,8 @@ header .content-wrapper {
   flex-flow: nowrap;
 }
 
-header a {
+header figure {
   width: 34%;
-}
-
-header img {
   padding: 0px;
 }
 
@@ -704,16 +703,17 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
-.reviews article a {
-  width: 49%;
+.reviews figure {
+  width: 45.5%;
+  margin-top: 7px;
 }
 
 .reviews .reviews-text {
-  width: 49%;
+  width: 51.5%;
 }
 
 .reviews h3 {
-  padding: 0 0 20px 0;
+  padding: 0 0 16px 0;
   font-size: 1.5em;
 }
 
@@ -854,7 +854,7 @@ header {
   padding: 24px 10% 22px 10%;
 }
 
-header a {
+header figure {
   width: 29%;
 }
 
@@ -946,8 +946,9 @@ input[type=button] {
   padding-bottom: 98px;
 }
 
-.reviews article a {
+.reviews figure {
   width: 48%;
+  margin-top: 0;
 }
 
 .reviews .reviews-text {
@@ -955,6 +956,7 @@ input[type=button] {
 }
 
 .reviews h3 {
+  padding-bottom: 20px;
   font-size: 1.875em;
 }
 
