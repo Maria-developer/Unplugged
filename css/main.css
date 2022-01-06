@@ -275,18 +275,19 @@ input[type=button] {
 }
 
 .features h2 {
-  padding: 51px 0 94px 0;
+  padding: 51px 0 15px 0;
   margin: 0;
   font-weight: 500;
   color: #e2e3ed;
   width: 96%;
 }
 
-.features .features-items {
+.features-items {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding-bottom: 65px;
 }
 
 .features article {
@@ -294,10 +295,15 @@ input[type=button] {
 }
 
 .features article p {
-  padding: 76px 0;
+  padding: 0;
   margin: 0;
   text-align: center;
   color: #e1e2ea;
+}
+
+.features i {
+	font-size: 3.75em;
+  margin: 55px 0 40px 0;
 }
 
 /* -------------------- Reviews -------------------- */
@@ -679,27 +685,33 @@ input[type=button] {
 /* -------------------- Features -------------------- */
 
 .features .content-wrapper {
-  margin: 98px 0 42px 0;
+  margin: 100px 0 85px 0;
 }
 
 .features h2 {
-  padding: 0 0 40px 0;
+  padding: 0;
   font-size: 2.25em;
   width: 100%;
 }
 
-.features .features-items {
+.features-items {
   justify-content: space-between;
   align-items: flex-start;
+  padding: 0;
 }
 
 .features article {
   flex-basis: 32%;
-  padding: 0 57px;
+  padding: 0 57px 10px 57px;
 }
 
 .features article p {
-  padding: 30px 0 50px 0;
+  padding: 0;
+}
+
+.features i {
+	font-size: 4.5em;
+  margin: 40px 0 30px 0;
 }
 
 /* -------------------- Reviews -------------------- */
@@ -938,15 +950,15 @@ input[type=button] {
 /* -------------------- Features -------------------- */
 
 .features .content-wrapper {
-  margin: 105px 0 27px 0;
+  margin: 105px 0 90px 0;
 }
 
 .features h2 {
-  padding-bottom: 100px;
+  padding-bottom: 35px;
   width: 89%;
 }
 
-.features .features-items {
+.features-items {
   justify-content: space-around;
 }
 
@@ -956,8 +968,12 @@ input[type=button] {
 }
 
 .features article p {
-  padding: 25px 69px 63px 69px;
+  padding: 0 69px 0 69px;
   font-size: 1.125em;
+}
+
+.features i {
+  margin: 65px 0 28px 0;
 }
 
 /* -------------------- Reviews -------------------- */
