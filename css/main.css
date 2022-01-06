@@ -793,6 +793,12 @@ footer .copyright p {
   width: 46%;
 }
 
+/* -------------------- Map -------------------- */
+
+.map figure {
+  padding-bottom: 45%; 
+}
+
 /* -------------------- Contact Section -------------------- */
 
 .contact-section {
@@ -1021,6 +1027,12 @@ footer .copyright p {
 
 .mission-content p {
   font-size: 1.125em;
+}
+
+/* -------------------- Map -------------------- */
+
+.map figure {
+  padding-bottom: 37%; 
 }
 
 /* -------------------- Contact Section -------------------- */
