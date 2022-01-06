@@ -386,6 +386,14 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #527158;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+footer .social-icons p i {
+  font-size: 1.125em;
 }
 
 footer .copyright p {
@@ -765,15 +773,22 @@ footer .footer-content {
   margin: 100px 60px;
 }
 
-footer .contact, 
-footer .social {
-  width: 32%;
+footer .contact {
+  width: 28%;
 }
 
 footer .contact h4, 
 footer .social h4 {
   padding: 0 0 43px 0;
   font-size: 1.5em;
+}
+
+footer .social {
+  width: 38%;
+}
+
+footer .social-icons {
+  justify-content: space-between;
 }
 
 footer .copyright p {
@@ -1011,9 +1026,8 @@ footer .content-wrapper {
   width: 80%;
 }
 
-footer .contact, 
-footer .social {
-  width: 33%;
+footer .contact {
+  width: 21%;
 }
 
 footer .contact h4, 
@@ -1024,6 +1038,10 @@ footer .social h4 {
 
 footer .contact address p {
   font-size: 1.125em;
+}
+
+footer .social {
+  width: 24%;
 }
 
 footer .copyright p {
