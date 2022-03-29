@@ -11,1112 +11,1088 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+  }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
+  /*
+  * Remove text-shadow in selection highlight:
+  * https://twitter.com/miketaylr/status/12228805301
+  *
+  * Vendor-prefixed and regular ::selection selectors cannot be combined:
+  * https://stackoverflow.com/a/16982510/7133471
+  *
+  * Customize the background color to match your design.
+  */
 
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
 
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
 
-/*
- * A better looking default horizontal rule
- */
+  /*
+  * A better looking default horizontal rule
+  */
 
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
+  /*
+  * Remove the gap between audio, canvas, iframes,
+  * images, videos and the bottom of their containers:
+  * https://github.com/h5bp/html5-boilerplate/issues/440
+  */
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
 
-/*
- * Remove default fieldset styles.
- */
+  /*
+  * Remove default fieldset styles.
+  */
 
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
 
-/*
- * Allow only vertical resizing of textareas.
- */
+  /*
+  * Allow only vertical resizing of textareas.
+  */
 
-textarea {
-  resize: vertical;
-}
+  textarea {
+    resize: vertical;
+  }
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
-/* General Styles */
- 
-html {
-	font-size: 16px;
-}
- 
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
-}
- 
-ul, 
-ol {
-  list-style: none;
-}
- 
-a {
-	color: #e2e3ed;
-  text-decoration: none;
-}
- 
-h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.875em;
-}
- 
-h3, 
-h4 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.125em;
-}
- 
-p {
-	font-size: 0.875em;
-}
- 
-img { 
-	width: 100%;
-}
- 
-figure {
-  margin: 0;
-}
- 
-address {
-  font-size: 0.875em;
-}
- 
-.content-wrapper {
-  width: 89%;
-  margin: 0;
-}
-
-/*
-   Homepage
-   ========================================================================== */
-
-/* -------------------- Header -------------------- */
-
-header {
-  background-color: #202322;
-}
-
-header .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  width: 100%;
-}
-
-header figure {
-  width: 55%;
-  padding: 15px 0 10px 0;
-}
-
-header .header-divider {
-  width: 100%;
-  height: 1px;
-  background-color: #3a3a3a;
-}
-
-header nav {
-  width: 40%;
-}
-
-header nav ul {
-  display: flex;
-  justify-content: space-between;
-  padding: 18px 0 20px 0;
-  margin: 0;
-  font-size: 1.125em;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-/* -------------------- Hero Area -------------------- */
-
-.hero-area {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  background: url('../img/hero-image.jpg') center no-repeat #333;
-  background-size: cover;
-}
-
-.hero-area h1 {
-  padding: 55px 0 330px 0;
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  font-size: 2.25em;
-  font-weight: 500;
-  color: #e2e3ed;
-}
-
-/* -------------------- Aside -------------------- */
-
-aside {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  padding: 0;
-  background-color: #527158;
-}
-
-aside h3 {
-  font-weight: 500;
-  margin: 0;
-  color: #e2e3ed;
-}
-
-.form-description h3 {
-  padding-top: 30px;
-}
-
-.form-description p {
-  padding: 14px 0 40px 0;
-  margin: 0;
-  color: #e2e3ed;
-}
-
-.form {
-  margin: 0 0 36px 0;
-}
-
-.form h3 {
-  padding-bottom: 18px;
-}
-
-.form input {
-  margin-bottom: 18px;
-}
- 
-input[type=text] {
-  box-sizing: border-box;
-  width: 100%;
-  color: #9d9ea4;
-  font-style: italic;
-  padding: 1em;
-  font-size: 0.875em;
-  border: none;
-}
- 
-input[type=button] {
-  width: 100%;
-  padding: 20px 0;
-  background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-/* -------------------- Features -------------------- */
-
-.features {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  background: url('../img/features-background.jpg') center no-repeat #333;
-  background-size: cover;
-}
-
-.features h2 {
-  padding: 51px 0 15px 0;
-  margin: 0;
-  font-weight: 500;
-  color: #e2e3ed;
-  width: 96%;
-}
-
-.features-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  padding-bottom: 65px;
-}
-
-.features article {
-  width: 62%;
-}
-
-.features article p {
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  color: #e1e2ea;
-}
-
-.features i {
-	font-size: 3.75em;
-  margin: 55px 0 40px 0;
-}
-
-/* -------------------- Reviews -------------------- */
-
-.reviews {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  background-color: #2a423a;
-}
-
-.reviews h2 {
-  padding: 55px 0 32px 0;
-  margin: 0;
-  color: #e2e3ed;
-  font-weight: 500;
-  width: 98%;
-}
-
-.reviews figure {
-  width: 100%;
-}
-
-.reviews h3 {
-  padding: 22px 0 25px 0;
-  margin: 0;
-  color: #e2e3ed;
-  font-weight: 500;
-}
-
-.reviews p {
-  padding-bottom: 45px;
-  margin: 0;
-  color: #e2e3ed;
-}
-
-/* -------------------- Footer -------------------- */
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
-  background-color: #202322;
-}
-
-footer .content-wrapper {
-  width: 56%;
-}
-
-footer h4 {
-  margin: 0;
-  text-align: center;
-  color: #ffffff;
-  font-weight: 500;
-}
-
-footer .contact h4 {
-  padding: 52px 0 22px 0;
-}
-
-footer p {
-  margin: 0;
-  text-align: center;
-  color: #ffffff;
-  font-style: normal;
-}
-
-footer .social h4 {
-  padding: 48px 0 20px 0;
-}
-
-footer .social-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-footer .social-icons p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #527158;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-
-footer .social-icons p i {
-  font-size: 1.125em;
-}
-
-footer .copyright p {
-  padding: 52px 0 20px 0;
-  color: #ffffff;
-}
-
-/*
-   About Page
-   ========================================================================== */
-
-/* -------------------- Mission -------------------- */
-
-.mission {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  padding: 54px 0 50px 0;
-  background-color: #527158;
-}
-
-.mission h2 {
-  padding: 0 0 18px 0;
-  margin: 0;
-  font-weight: 500;
-  color: #e2e3ed;
-  width: 99%;
-}
-
-.mission-content p {
-  margin: 0;
-  color: #e2e3ed;
-}
-
-/* -------------------- Map -------------------- */
-
-.map figure {
-  width: 100%;
-  height: 0; 
-  padding-bottom: 125%; 
-  overflow: hidden;
-  position: relative;
-}
-
-.map iframe {
-  width: 100%;
-  height: 100%;
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-}
-
-/* -------------------- Contact Section -------------------- */
+  /* General Styles */
   
-.contact-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  padding: 54px 0 44px 0;
-  background-color: #2a423a;
-}
+    html {
+      font-size: 16px;
+    }
+    
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1em;
+    }
+    
+    ul, 
+    ol {
+      list-style: none;
+    }
+    
+    a {
+      color: #e2e3ed;
+      text-decoration: none;
+    }
+    
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.875em;
+    }
+    
+    h3, 
+    h4 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.125em;
+    }
+    
+    p {
+      font-size: 0.875em;
+    }
+    
+    img { 
+      width: 100%;
+    }
+    
+    figure {
+      margin: 0;
+    }
+    
+    address {
+      font-size: 0.875em;
+    }
+    
+    .content-wrapper {
+      margin: 0;
+      width: 89%;
+    }
 
-.contact-section h2 {
-  margin: 0;
-  color: #e2e3ed;
-  font-weight: 500;
-}
+  /* -------------------- Homepage -------------------- */
 
-.contact-section h4 {
-  padding: 13px 0 17px 0;
-  margin: 0;
-  color: #ffffff;
-  font-weight: 500;
-  font-style: normal;
-}
+    /* Header */
 
-.contact-section p {
-  margin: 0;
-  color: #e1e2ea;
-  font-style: normal;
-  padding-bottom: 6px;
-}
+      header {
+        background-color: #202322;
+      }
 
-/*
-   FAQ Page
-   ========================================================================== */
+      header .content-wrapper {
+        align-items: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 100%;
+      }
 
-/* -------------------- FAQ Section -------------------- */
+      header figure {
+        padding: 15px 0 10px 0;
+        width: 55%;
+      }
 
-.faq {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  padding: 52px 0 45px 0;
-  background-color: #527158;
-}
+      header .header-divider {
+        background-color: #3a3a3a;
+        height: 1px;
+        width: 100%;
+      }
 
-.faq .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-flow: row wrap;
-}
+      header nav {
+        width: 40%;
+      }
 
-.faq h2 {
-  margin: 0;
-  color: #e2e3ed;
-  font-weight: 500;
-}
+      header nav ul {
+        display: flex;
+        font-size: 1.125em;
+        font-weight: bold;
+        justify-content: space-between;
+        margin: 0;
+        padding: 18px 0 20px 0;
+        text-transform: uppercase;
+      }
 
-.faq-content h4 {
-  padding: 45px 0 16px 0;
-  margin: 0;
-  color: #e2e3ed;
-  font-weight: 500;
-}
+    /* Hero Area */
 
-.faq-content p {
-  margin: 0;
-  color: #e2e3ed;
-}
+      .hero-area {
+        background: url('../img/hero-image.jpg') center no-repeat #333;
+        background-size: cover;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+      }
+
+      .hero-area h1 {
+        color: #e2e3ed;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2.25em;
+        font-weight: 500;
+        margin: 0;
+        padding: 55px 0 330px 0;
+      }
+
+    /* Aside */
+
+      aside {
+        align-items: center;
+        background-color: #527158;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 0;
+      }
+
+      aside h3 {
+        color: #e2e3ed;
+        font-weight: 500;
+        margin: 0;
+      }
+
+      .form-description h3 {
+        padding-top: 30px;
+      }
+
+      .form-description p {
+        color: #e2e3ed;
+        margin: 0;
+        padding: 14px 0 40px 0;
+      }
+
+      .form {
+        margin: 0 0 36px 0;
+      }
+
+      .form h3 {
+        padding-bottom: 18px;
+      }
+
+      .form input {
+        margin-bottom: 18px;
+      }
+      
+      input[type=text] {
+        border: none;
+        box-sizing: border-box;
+        color: #9d9ea4;
+        font-size: 0.875em;
+        font-style: italic;
+        padding: 1em;
+        width: 100%;
+      }
+      
+      input[type=button] {
+        background-color: #2a423a;
+        border: none;
+        color: #e2e3ed;
+        font-family: 'Poppins', Helvetica, Arial, sans-serif;
+        font-size: 1.125em;
+        font-weight: 500;
+        padding: 20px 0;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+      }
+
+    /* Features */
+
+      .features {
+        background: url('../img/features-background.jpg') center no-repeat #333;
+        background-size: cover;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+      }
+
+      .features h2 {
+        color: #e2e3ed;
+        font-weight: 500;
+        margin: 0;
+        padding: 51px 0 15px 0;
+        width: 96%;
+      }
+
+      .features-items {
+        align-items: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding-bottom: 65px;
+      }
+
+      .features article {
+        width: 62%;
+      }
+
+      .features article p {
+        color: #e1e2ea;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      .features i {
+        font-size: 3.75em;
+        margin: 55px 0 40px 0;
+      }
+
+    /* Reviews */
+
+      .reviews {
+        background-color: #2a423a;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+      }
+
+      .reviews h2 {
+        color: #e2e3ed;
+        font-weight: 500;
+        margin: 0;
+        padding: 55px 0 32px 0;
+        width: 98%;
+      }
+
+      .reviews figure {
+        width: 100%;
+      }
+
+      .reviews h3 {
+        color: #e2e3ed;
+        font-weight: 500;
+        margin: 0;
+        padding: 22px 0 25px 0;
+      }
+
+      .reviews p {
+        color: #e2e3ed;
+        margin: 0;
+        padding-bottom: 45px;
+      }
+
+    /* Footer */
+
+      footer {
+        align-items: center;
+        background-color: #202322;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+      }
+
+      footer .content-wrapper {
+        width: 56%;
+      }
+
+      footer h4 {
+        color: #ffffff;
+        font-weight: 500;
+        margin: 0;
+        text-align: center;
+      }
+
+      footer .contact h4 {
+        padding: 52px 0 22px 0;
+      }
+
+      footer p {
+        color: #ffffff;
+        font-style: normal;
+        margin: 0;
+        text-align: center;
+      }
+
+      footer .social h4 {
+        padding: 48px 0 20px 0;
+      }
+
+      footer .social-icons {
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      footer .social-icons p {
+        align-items: center;
+        background-color: #527158;
+        border-radius: 50%;
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        width: 40px;
+      }
+
+      footer .social-icons p i {
+        font-size: 1.125em;
+      }
+
+      footer .copyright p {
+        color: #ffffff;
+        padding: 52px 0 20px 0;
+      }
+
+  /* -------------------- About Page -------------------- */
+
+    /* Mission */
+
+      .mission {
+        align-items: center;
+        background-color: #527158;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 54px 0 50px 0;
+      }
+
+      .mission h2 {
+        color: #e2e3ed;
+        font-weight: 500;
+        margin: 0;
+        padding: 0 0 18px 0;
+        width: 99%;
+      }
+
+      .mission-content p {
+        color: #e2e3ed;
+        margin: 0;
+      }
+
+    /* Map */
+
+      .map figure {
+        height: 0; 
+        overflow: hidden;
+        padding-bottom: 125%; 
+        position: relative;
+        width: 100%;
+      }
+
+      .map iframe {
+        height: 100%;
+        left: 0; 
+        position: absolute; 
+        top: 0; 
+        width: 100%;
+      }
+
+    /* Contact */
+      
+      .contact-section {
+        align-items: center;
+        background-color: #2a423a;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 54px 0 44px 0;
+      }
+
+      .contact-section h2 {
+        color: #e2e3ed;
+        font-weight: 500;
+        margin: 0;
+      }
+
+      .contact-section h4 {
+        color: #ffffff;
+        font-style: normal;
+        font-weight: 500;
+        margin: 0;
+        padding: 13px 0 17px 0;
+      }
+
+      .contact-section p {
+        color: #e1e2ea;
+        font-style: normal;
+        margin: 0;
+        padding-bottom: 6px;
+      }
+
+  /* -------------------- FAQ Page -------------------- */
+
+    .faq {
+      align-items: center;
+      background-color: #527158;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      padding: 52px 0 45px 0;
+    }
+
+    .faq .content-wrapper {
+      align-items: flex-start;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+
+    .faq h2 {
+      color: #e2e3ed;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    .faq-content h4 {
+      color: #e2e3ed;
+      font-weight: 500;
+      margin: 0;
+      padding: 45px 0 16px 0;
+    }
+
+    .faq-content p {
+      color: #e2e3ed;
+      margin: 0;
+    }
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
 
-/*
- * Hide visually and from screen readers
- */
+  /*
+  * Hide visually and from screen readers
+  */
 
-.hidden,
-[hidden] {
-  display: none !important;
-}
+  .hidden,
+  [hidden] {
+    display: none !important;
+  }
 
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
+  /*
+  * Hide only visually, but have it available for screen readers:
+  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+  *
+  * 1. For long content, line feeds are not interpreted as spaces and small width
+  *    causes content to wrap 1 word per line:
+  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+  */
 
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
+  .sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
+  }
 
-/*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
+  /*
+  * Extends the .sr-only class to allow the element
+  * to be focusable when navigated to via the keyboard:
+  * https://www.drupal.org/node/897638
+  */
 
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
+  .sr-only.focusable:active,
+  .sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+  }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
+  /*
+  * Hide visually and from screen readers, but maintain layout
+  */
 
-.invisible {
-  visibility: hidden;
-}
+  .invisible {
+    visibility: hidden;
+  }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
+  /*
+  * Clearfix: contain floats
+  *
+  * For modern browsers
+  * 1. The space content is one way to avoid an Opera bug when the
+  *    `contenteditable` attribute is included anywhere else in the document.
+  *    Otherwise it causes space to appear at the top and bottom of elements
+  *    that receive the `clearfix` class.
+  * 2. The use of `table` rather than `block` is only necessary if using
+  *    `:before` to contain the top-margins of child elements.
+  */
 
-.clearfix::before,
-.clearfix::after {
-  content: " ";
-  display: table;
-}
+  .clearfix::before,
+  .clearfix::after {
+    content: " ";
+    display: table;
+  }
 
-.clearfix::after {
-  clear: both;
-}
+  .clearfix::after {
+    clear: both;
+  }
 
 /* ==========================================================================
    Tablet Styles
    ========================================================================== */
 
-@media only screen and (min-width: 768px) {
-
-/* 
-   Homepage
-   ========================================================================== */
-
-.content-wrapper {
-width: 83%;
-}
-
-/* -------------------- Header -------------------- */
-
-header {
-  padding: 32px 8.5% 28px 8.5%;
-}
-
-header .content-wrapper {
-  flex-flow: nowrap;
-}
-
-header figure {
-  width: 34%;
-  padding: 0px;
-}
-
-.header-divider {
-  display: none;
-}
-
-header nav {
-  display: flex;
-  justify-content: flex-end;
-  width: 66%;
-}
-
-header nav ul {
-  justify-content: space-between;
-  width: 29%;
-  padding: 0;
-}
-
-/* -------------------- Hero Area -------------------- */
-
-.hero-area h1 {
-  padding: 98px 105px 414px 0;
-  font-size: 3em;
-}
-
-/* -------------------- Aside -------------------- */
-  
-aside .content-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-flow: nowrap;
-  margin: 50px 0 30px 0;
-}
-
-.form-description {
-  width: 40%;
-}
-
-.form-description h3, 
-.form h3 {
-  padding: 0 0 22px 0;
-  font-size: 1.5em;
-}
-
-.form-description p {
-  padding: 0;
-}
-
-.form {
-  width: 45%;
-  margin: 0;
-}
-
-.form input {
-  margin-bottom: 20px;
-}
-
-input[type=button] {
-  padding: 14px 0;
-}
-
-/* -------------------- Features -------------------- */
-
-.features .content-wrapper {
-  margin: 100px 0 85px 0;
-}
-
-.features h2 {
-  padding: 0;
-  font-size: 2.25em;
-  width: 100%;
-}
-
-.features-items {
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 0;
-}
-
-.features article {
-  flex-basis: 32%;
-  padding: 0 57px 10px 57px;
-}
-
-.features article p {
-  padding: 0;
-}
-
-.features i {
-	font-size: 4.5em;
-  margin: 40px 0 30px 0;
-}
-
-/* -------------------- Reviews -------------------- */
-
-.reviews .content-wrapper {
-  margin: 104px 0 102px 0;
-}
-
-.reviews h2 {
-  padding: 0 0 26px 0;
-  font-size: 2.25em;
-  width: 77%;
-}
-
-.reviews article {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-flow: row wrap;
-}
-
-.reviews figure {
-  width: 45.5%;
-  margin-top: 7px;
-}
-
-.reviews .reviews-text {
-  width: 51.5%;
-}
-
-.reviews h3 {
-  padding: 0 0 16px 0;
-  font-size: 1.5em;
-}
-
-.reviews p {
-  padding: 0;
-}
-
-/* -------------------- Footer -------------------- */
-
-footer .content-wrapper {
-  width: 83%;
-}
-
-footer .footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-flow: row wrap;
-  margin: 100px 60px;
-}
-
-footer .contact {
-  width: 28%;
-}
-
-footer .contact h4, 
-footer .social h4 {
-  padding: 0 0 43px 0;
-  font-size: 1.5em;
-}
-
-footer .social {
-  width: 38%;
-}
-
-footer .social-icons {
-  justify-content: space-between;
-}
-
-footer .copyright p {
-  padding: 0 0 20px 0;
-}
-
-/* 
-   About Page
-   ========================================================================== */
-
-/* -------------------- Mission -------------------- */
-
-.mission {
-  padding: 100px 0 98px 0;
-}
-
-.mission h2 {
-  padding-bottom: 40px;
-  font-size: 2.25em;
-}
-
-.mission-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.mission-content p {
-  width: 46%;
-}
-
-/* -------------------- Map -------------------- */
-
-.map figure {
-  padding-bottom: 45%; 
-}
-
-/* -------------------- Contact Section -------------------- */
-
-.contact-section {
-  padding: 100px 0;
-}
-
-.contact-section h2 {
-  width: 79%;
-  font-size: 2.25em;
-}
-
-.contact-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.general-information {
-  width: 38%;
-}
-
-.contact-section h4 {
-  padding: 57px 0 20px 0;
-  font-size: 1.5em;
-}
-
-.chat-with-us {
-  width: 45%;
-}
-
-/* 
-   FAQ Page
-   ========================================================================== */
-
-/* -------------------- FAQ Section -------------------- */
-
-.faq {
-  padding: 100px 0;
-}
-
-.faq .content-wrapper {
-  justify-content: space-between;
-}
-
-.faq h2 {
-  width: 100%;
-  font-size: 2.25em;
-}
-
-.faq-content {
-  flex-basis: 46%;
-}
-
-.faq-content h4 {
-  padding: 37px 0 22px 0;
-}
-
-}
+  @media only screen and (min-width: 768px) {
+
+  /* -------------------- Homepage -------------------- */
+
+    .content-wrapper {
+      width: 83%;
+    }
+
+    /* Header */
+
+      header {
+        padding: 32px 8.5% 28px 8.5%;
+      }
+
+      header .content-wrapper {
+        flex-flow: nowrap;
+      }
+
+      header figure {
+        padding: 0px;
+        width: 34%;
+      }
+
+      .header-divider {
+        display: none;
+      }
+
+      header nav {
+        display: flex;
+        justify-content: flex-end;
+        width: 66%;
+      }
+
+      header nav ul {
+        justify-content: space-between;
+        padding: 0;
+        width: 29%;
+      }
+
+    /* Hero Area */
+
+      .hero-area h1 {
+        font-size: 3em;
+        padding: 98px 105px 414px 0;
+      }
+
+    /* Aside */
+      
+      aside .content-wrapper {
+        align-items: flex-start;
+        display: flex;
+        flex-flow: nowrap;
+        justify-content: space-between;
+        margin: 50px 0 30px 0;
+      }
+
+      .form-description {
+        width: 40%;
+      }
+
+      .form-description h3, 
+      .form h3 {
+        font-size: 1.5em;
+        padding: 0 0 22px 0;
+      }
+
+      .form-description p {
+        padding: 0;
+      }
+
+      .form {
+        margin: 0;
+        width: 45%;
+      }
+
+      .form input {
+        margin-bottom: 20px;
+      }
+
+      input[type=button] {
+        padding: 14px 0;
+      }
+
+    /* Features */
+
+      .features .content-wrapper {
+        margin: 100px 0 85px 0;
+      }
+
+      .features h2 {
+        font-size: 2.25em;
+        padding: 0;
+        width: 100%;
+      }
+
+      .features-items {
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 0;
+      }
+
+      .features article {
+        flex-basis: 32%;
+        padding: 0 57px 10px 57px;
+      }
+
+      .features article p {
+        padding: 0;
+      }
+
+      .features i {
+        font-size: 4.5em;
+        margin: 40px 0 30px 0;
+      }
+
+    /* Reviews */
+
+      .reviews .content-wrapper {
+        margin: 104px 0 102px 0;
+      }
+
+      .reviews h2 {
+        font-size: 2.25em;
+        padding: 0 0 26px 0;
+        width: 77%;
+      }
+
+      .reviews article {
+        align-items: flex-start;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+      }
+
+      .reviews figure {
+        margin-top: 7px;
+        width: 45.5%;
+      }
+
+      .reviews .reviews-text {
+        width: 51.5%;
+      }
+
+      .reviews h3 {
+        font-size: 1.5em;
+        padding: 0 0 16px 0;
+      }
+
+      .reviews p {
+        padding: 0;
+      }
+
+    /* Footer */
+
+      footer .content-wrapper {
+        width: 83%;
+      }
+
+      footer .footer-content {
+        align-items: flex-start;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin: 100px 60px;
+      }
+
+      footer .contact {
+        width: 28%;
+      }
+
+      footer .contact h4, 
+      footer .social h4 {
+        font-size: 1.5em;
+        padding: 0 0 43px 0;
+      }
+
+      footer .social {
+        width: 38%;
+      }
+
+      footer .social-icons {
+        justify-content: space-between;
+      }
+
+      footer .copyright p {
+        padding: 0 0 20px 0;
+      }
+
+  /* -------------------- About Page -------------------- */
+
+    /* Mission */
+
+      .mission {
+        padding: 100px 0 98px 0;
+      }
+
+      .mission h2 {
+        font-size: 2.25em;
+        padding-bottom: 40px;
+      }
+
+      .mission-content {
+        align-items: flex-start;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .mission-content p {
+        width: 46%;
+      }
+
+    /* Map */
+
+      .map figure {
+        padding-bottom: 45%; 
+      }
+
+    /* Contact */
+
+      .contact-section {
+        padding: 100px 0;
+      }
+
+      .contact-section h2 {
+        font-size: 2.25em;
+        width: 79%;
+      }
+
+      .contact-content {
+        align-items: flex-start;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .general-information {
+        width: 38%;
+      }
+
+      .contact-section h4 {
+        font-size: 1.5em;
+        padding: 57px 0 20px 0;
+      }
+
+      .chat-with-us {
+        width: 45%;
+      }
+
+  /* -------------------- FAQ Page -------------------- */
+
+    .faq {
+      padding: 100px 0;
+    }
+
+    .faq .content-wrapper {
+      justify-content: space-between;
+    }
+
+    .faq h2 {
+      font-size: 2.25em;
+      width: 100%;
+    }
+
+    .faq-content {
+      flex-basis: 46%;
+    }
+
+    .faq-content h4 {
+      padding: 37px 0 22px 0;
+    }
+
+  }
 
 /* ==========================================================================
    Desktop Styles
    ========================================================================== */
 
-@media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1200px) {
 
-/* 
-   Homepage
-   ========================================================================== */
+  /* -------------------- Homepage -------------------- */
 
-.content-wrapper {
-  width: 80%;
-}
+    .content-wrapper {
+      width: 80%;
+    }
 
-/* -------------------- Header -------------------- */
+    /* Header */
 
-header {
-  padding: 24px 10% 22px 10%;
-}
+      header {
+        padding: 24px 10% 22px 10%;
+      }
 
-header figure {
-  width: 29%;
-}
+      header figure {
+        width: 29%;
+      }
 
-header nav {
-  width: 71%;
-}
+      header nav {
+        width: 71%;
+      }
 
-header nav ul {
-  width: 20%;
-}
+      header nav ul {
+        width: 20%;
+      }
 
-/* -------------------- Hero Area -------------------- */
+    /* Hero Area */
 
-.hero-area h1 {
-  padding: 49px 294px 439px 0;
-  font-size: 3.75em;
-}
+      .hero-area h1 {
+        font-size: 3.75em;
+        padding: 49px 294px 439px 0;
+      }
 
-/* -------------------- Aside -------------------- */
+    /* Aside */
 
-aside .content-wrapper {
-  justify-content: space-around;
-  margin-bottom: 34px;
-}
+      aside .content-wrapper {
+        justify-content: space-around;
+        margin-bottom: 34px;
+      }
 
-.form-description {
-  width: 33%;
-}
+      .form-description {
+        width: 33%;
+      }
 
-.form-description h3, 
-.form h3 {
-  padding-bottom: 18px;
-  font-size: 1.875em;
-}
+      .form-description h3, 
+      .form h3 {
+        font-size: 1.875em;
+        padding-bottom: 18px;
+      }
 
-.form-description p {
-  font-size: 1.125em;
-  padding-right: 35px;
-}
+      .form-description p {
+        font-size: 1.125em;
+        padding-right: 35px;
+      }
 
-.form {
-  width: 33%;
-}
+      .form {
+        width: 33%;
+      }
 
-.form input {
-  margin-bottom: 16px;
-}
+      .form input {
+        margin-bottom: 16px;
+      }
 
-input[type=text] {
-  font-size: 1.125em;
-}
- 
-input[type=button] {
-  font-size: 1.5em;
-}
+      input[type=text] {
+        font-size: 1.125em;
+      }
+      
+      input[type=button] {
+        font-size: 1.5em;
+      }
 
-/* -------------------- Features -------------------- */
+    /* Features */
 
-.features .content-wrapper {
-  margin: 105px 0 90px 0;
-}
+      .features .content-wrapper {
+        margin: 105px 0 90px 0;
+      }
 
-.features h2 {
-  padding-bottom: 35px;
-  width: 89%;
-}
+      .features h2 {
+        padding-bottom: 35px;
+        width: 89%;
+      }
 
-.features-items {
-  justify-content: space-around;
-}
+      .features-items {
+        justify-content: space-around;
+      }
 
-.features article {
-  flex-basis: 33%;
-  padding: 0;
-}
+      .features article {
+        flex-basis: 33%;
+        padding: 0;
+      }
 
-.features article p {
-  padding: 0 69px 0 69px;
-  font-size: 1.125em;
-}
+      .features article p {
+        font-size: 1.125em;
+        padding: 0 69px 0 69px;
+      }
 
-.features i {
-  margin: 65px 0 28px 0;
-}
+      .features i {
+        margin: 65px 0 28px 0;
+      }
 
-/* -------------------- Reviews -------------------- */
+    /* Reviews */
 
-.reviews .content-wrapper {
-  margin: 102px 0 97px 0;
-}
+      .reviews .content-wrapper {
+        margin: 102px 0 97px 0;
+      }
 
-.reviews h2 {
-  padding-bottom: 98px;
-}
+      .reviews h2 {
+        padding-bottom: 98px;
+      }
 
-.reviews figure {
-  width: 48%;
-  margin-top: 0;
-}
+      .reviews figure {
+        margin-top: 0;
+        width: 48%;
+      }
 
-.reviews .reviews-text {
-  width: 48%;
-}
+      .reviews .reviews-text {
+        width: 48%;
+      }
 
-.reviews h3 {
-  padding-bottom: 20px;
-  font-size: 1.875em;
-}
+      .reviews h3 {
+        font-size: 1.875em;
+        padding-bottom: 20px;
+      }
 
-.reviews p {
-  font-size: 1.125em;
-  padding-right: 35px;
-}
+      .reviews p {
+        font-size: 1.125em;
+        padding-right: 35px;
+      }
 
-/* -------------------- Footer -------------------- */
+    /* Footer */
 
-footer .content-wrapper {
-  width: 80%;
-}
+      footer .content-wrapper {
+        width: 80%;
+      }
 
-footer .contact {
-  width: 21%;
-}
+      footer .contact {
+        width: 21%;
+      }
 
-footer .contact h4, 
-footer .social h4 {
-  padding-bottom: 40px;
-  font-size: 1.875em;
-}
+      footer .contact h4, 
+      footer .social h4 {
+        font-size: 1.875em;
+        padding-bottom: 40px;
+      }
 
-footer .contact address p {
-  font-size: 1.125em;
-}
+      footer .contact address p {
+        font-size: 1.125em;
+      }
 
-footer .social {
-  width: 24%;
-}
+      footer .social {
+        width: 24%;
+      }
 
-footer .copyright p {
-  font-size: 1.125em;
-}
+      footer .copyright p {
+        font-size: 1.125em;
+      }
 
-/* 
-   About Page
-   ========================================================================== */
+  /* -------------------- About Page -------------------- */
 
-/* -------------------- Mission -------------------- */
+    /* Mission */
 
-.mission h2 {
-  font-size: 3em;
-  width: 92%;
-}
+      .mission h2 {
+        font-size: 3em;
+        width: 92%;
+      }
 
-.mission-content p {
-  font-size: 1.125em;
-}
+      .mission-content p {
+        font-size: 1.125em;
+      }
 
-/* -------------------- Map -------------------- */
+    /* Map */
 
-.map figure {
-  padding-bottom: 37%; 
-}
+      .map figure {
+        padding-bottom: 37%; 
+      }
 
-/* -------------------- Contact Section -------------------- */
+    /* Contact */
 
-.contact-section {
-  margin-top: 104px 0 100px 0;
-}
+      .contact-section {
+        margin-top: 104px 0 100px 0;
+      }
 
-.contact-section h2 {
-  width: 97%;
-  font-size: 3em;
-}
+      .contact-section h2 {
+        font-size: 3em;
+        width: 97%;
+      }
 
-.general-information {
-  width: 32%;
-}
+      .general-information {
+        width: 32%;
+      }
 
-.contact-section h4 {
-  padding: 25px 0 43px 0;
-  font-size: 1.875em;
-}
+      .contact-section h4 {
+        font-size: 1.875em;
+        padding: 25px 0 43px 0;
+      }
 
-.chat-with-us {
-  width: 47%;
-}
+      .chat-with-us {
+        width: 47%;
+      }
 
-.contact-section p {
-  font-size: 1.125em;
-}
+      .contact-section p {
+        font-size: 1.125em;
+      }
 
-/* 
-   FAQ Page
-   ========================================================================== */
+  /* -------------------- FAQ Page -------------------- */
 
-/* -------------------- FAQ Section -------------------- */
+    .faq h2 {
+      font-size: 3em;
+    }
 
-.faq h2 {
-  font-size: 3em;
-}
+    .faq-content h4 {
+      font-size: 1.3em;
+      padding: 30px 0 20px 0;
+    }
 
-.faq-content h4 {
-  font-size: 1.3em;
-  padding: 30px 0 20px 0;
-}
+    .faq-content p {
+      font-size: 1.125em;
+    }
 
-.faq-content p {
-  font-size: 1.125em;
-}
-
-}
+  }
 
 /* ==========================================================================
    Print styles.
@@ -1124,72 +1100,71 @@ footer .copyright p {
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
+  @media print {
+    *,
+    *::before,
+    *::after {
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
 
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
 
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
 
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
+    abbr[title]::after {
+      content: " (" attr(title) ")";
+    }
 
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
+    /*
+    * Don't show links that are fragment identifiers,
+    * or use the `javascript:` pseudo protocol
+    */
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+      content: "";
+    }
 
-  pre {
-    white-space: pre-wrap !important;
-  }
+    pre {
+      white-space: pre-wrap !important;
+    }
 
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
 
-  /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
-  thead {
-    display: table-header-group;
-  }
+    /*
+    * Printing Tables:
+    * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+    */
+    thead {
+      display: table-header-group;
+    }
 
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
 
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
 
-  h2,
-  h3 {
-    page-break-after: avoid;
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
   }
-}
-
